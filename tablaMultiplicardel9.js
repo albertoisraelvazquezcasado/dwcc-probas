@@ -1,13 +1,8 @@
-function TablaMultiplicar (j){
-    document.write("<h2>Tabla de multiplicar del " + j +"</h2");
-    document.write ("<ul>");
-    // i++ es igual que i=i+1;
-    for (i=1;i<=10;i++){
-    document.write("<li>");
-    document.write(j +"x " + i + "= " + j * i);
-    document.write("</li>");
-}
-    document.write("</ul>");
-}
-TablaMultiplicar (9);
+let n1,i;
+i=0;
+n1=parseInt (prompt("Número :"));
 
+for(i=0; i<=10; i++){
+    document.write("<br>"+n1+"*"+i+"="+(n1*i));
+
+}
