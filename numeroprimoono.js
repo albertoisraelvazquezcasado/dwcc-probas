@@ -1,4 +1,6 @@
-function esPrimo(num) {
+<script>
+    function esPrimo(num) {
+
     //Si el numero es 1 o menor, no es numero primo
     if (num <=1) {
         return false;
@@ -15,3 +17,4 @@ function esPrimo(num) {
     alert("El número 5 es primo: "+esPrimo(5)); //true
     alert("EL número 10 es primo: "+esPrimo(10));//false
 }
+</script>
