@@ -1,18 +1,13 @@
-function fib(position = 10, serie = []) {
-    if(serie.length === position)
-    return serie.pop()
-
-    if(serie.length === 0) {
-        serie.push(0)
+function fibonacci(numero)
+{
+    var i=2;
+    var numeros=[0,1];
+    do
+    {
+        numeros[i] = numeros[i - 2] + numeros[i - 1];
+        i++;
     }
-    else if(serie.length ===1) {
-        serie.push(1)
-    }
-    else {
-        const lastIndex = serie.length
-        const next = serie[lastIndex-2] + serie[lastIndex-1]
-        serie.push(next)
-    }
-    return fib(position,serie)
-    console.log(10);
+    while(i < numero)
+    return numeros;
 }
+document.write(fibonacci(10));
