@@ -14,5 +14,7 @@
         return true;
 }
 //Vamos a visualizar el resultado por pantalla
-    alert("El número 5 es primo: "+esPrimo(5)); //true
-    alert("EL número 10 es primo: "+esPrimo(10));//false
+{
+    alert("El número 5 es primo: "+esPrimo(5));
+    alert("EL número 10 es primo: "+esPrimo(10));
+}
