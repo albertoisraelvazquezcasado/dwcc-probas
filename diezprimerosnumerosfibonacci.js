@@ -14,4 +14,5 @@ function fib(position = 10, serie = []) {
         serie.push(next)
     }
     return fib(position,serie)
+    console.log(10);
 }
