@@ -1,4 +1,9 @@
-var fib = function(n) {
-    if (n <=1) return n;
-    return fib(n-1) + fib(n-2);
+function fibonacci(n) {
+   if (n <=1) {
+    return n;
+   }
+   else {
+    return fibonacci(n-1) + fibonacci (n-2);
+   }
+
 }
