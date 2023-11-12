@@ -1,13 +1,12 @@
-function fibonacci(numero)
-{
-    var i=2;
-    var numeros=[0,1];
-    do
-    {
-        numeros[i] = numeros[i - 2] + numeros[i - 1];
-        i++;
-    }
-    while(i < numero)
-    return numeros;
+function GenerarFibonnaci(numero) {
+var fibonacci = [];
+fibonacci[0] = 0;
+fibonacci[1] = 1;
+for (var i = 2; i < numero; i++) {
+    fibonacci[i] = fibonacci[i - 2] + fibonacci[i-1];
+
 }
-document.write(fibonacci(10));
+    return fibonacci;
+}
+var f = GenerarFibonacci(10);
+console.log(f);
