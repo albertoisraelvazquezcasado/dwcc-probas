@@ -1,17 +1,18 @@
-const esPrimo = numero => {
-    if 
-    (numero == 0 || numero == 1 || numero == 4)
-    return false;
-    for (
-        let x = 2; x < numero / 2; x++){
-            if (numero % x == 0) return false;
-        }
-        return true;
-}
+var n1,primo;
+n1=parseInt(prompt("Inserta un numero")); //Para preguntar que numero se quiere introducir.
+i=2; // Casi todos los primos terminan en 2 por eso el valor de la variable es 2.
+primo=true; // Si es primo.
 
-const numerosParaComprobar = [1,2,6,9,12,15];
+do{
+    if(n1%i==0){
+        primo=false;
+    }
+    i++;
+}while(i<n1);
 
-numerosParaComprobar.forEach(numero => {
-    console.log("¿%d es primo?%s", numero, esPrimo(numero));
+if(primo===true) {
+    document.write("El numero "+n1+" es primo");
+    }
+else {
+    document.write("El numero "+n1+" no es primo");
 }
-    )
